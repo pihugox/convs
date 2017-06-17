@@ -1,0 +1,9 @@
+para saber el tamaño de la FC al ultimo se utiliza
+
+x = torch.rand(3, 256, 256)
+net:forward(x)
+net:apply(function (m) print(m.output:size()) end)
+
+
+profiling
+th profile-model.lua --model ../convs/3conv-pool.lua --res 1x3x256x256A --iter 10
