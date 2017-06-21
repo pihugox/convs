@@ -1,4 +1,4 @@
--- CNN with pooling layers
+-- 3 layer CNN + pool
 
 require 'nn'
 

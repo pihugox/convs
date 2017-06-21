@@ -1,4 +1,4 @@
--- Basic CNN
+-- 3 layer CNN
 
 require 'nn'
 

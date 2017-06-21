@@ -1,4 +1,4 @@
--- Huge MLP
+-- 3 layer MLP
 
 require 'nn'
 
