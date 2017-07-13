@@ -1,4 +1,6 @@
 require 'nn'
+require 'cutorch'
+require 'cunn'
 
 local nClasses = 1e3
 
@@ -116,5 +118,9 @@ block0:add(main0)
 block0:add(split0)
 
 local model = block0
+
+
+--cuda
+model:cuda()
 
 return model

@@ -6,4 +6,15 @@ net:apply(function (m) print(m.output:size()) end)
 
 
 profiling
+
+3perceptron
+th profile-model.lua --model ../convs/3perceptron.lua --res 1x1x1x196608 --iter 10
+
+3conv pool
 th profile-model.lua --model ../convs/3conv-pool.lua --res 1x3x256x256A --iter 10
+
+alextnet
+th profile-model.lua --model ../convs/alexnet.lua --res 1x3x224x224 --iter 10
+
+googlenet
+th profile-model.lua --model ../convs/googlenet.lua --res 1x3x224x224 --iter 10
